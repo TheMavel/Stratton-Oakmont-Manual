@@ -38,7 +38,6 @@ header {
 h1 {
     font-size: 28px;
     margin-bottom: 10px;
-    text-transform: uppercase;
     letter-spacing: 1px;
 }
 
@@ -163,6 +162,71 @@ footer {
     text-align: center;
 }
 
+/* Language selection styling */
+.language-selector {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+.language-btn {
+    padding: 5px 10px;
+    margin-left: 5px;
+    background-color: var(--highlight);
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.language-btn.active {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+/* Enhanced language switching */
+[class*="lang-"] {
+    display: none;
+}
+
+html[lang="en"] .lang-en {
+    display: block;
+}
+
+html[lang="en"] span.lang-en,
+html[lang="en"] strong.lang-en,
+html[lang="en"] em.lang-en {
+    display: inline;
+}
+
+html[lang="en"] a.lang-en,
+html[lang="en"] button.lang-en {
+    display: inline-block;
+}
+
+html[lang="en"] li.lang-en {
+    display: list-item;
+}
+
+html[lang="de"] .lang-de {
+    display: block;
+}
+
+html[lang="de"] span.lang-de,
+html[lang="de"] strong.lang-de,
+html[lang="de"] em.lang-de {
+    display: inline;
+}
+
+html[lang="de"] a.lang-de,
+html[lang="de"] button.lang-de {
+    display: inline-block;
+}
+
+html[lang="de"] li.lang-de {
+    display: list-item;
+}
+
 @media print {
     body {
         font-size: 12pt;
@@ -185,4 +249,20 @@ footer {
     h2 {
         font-size: 20px;
     }
+}
+
+.pdf-download {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.pdf-download:hover {
+    background-color: var(--primary-color);
 } 

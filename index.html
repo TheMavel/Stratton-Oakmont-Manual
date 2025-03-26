@@ -5,72 +5,168 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stratton Oakmont Sales Training Manual</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="language-switcher.js"></script>
 </head>
 <body>
+    <div class="language-selector">
+        <button class="language-btn active" data-lang="en" onclick="switchLanguage('en')">EN</button>
+        <button class="language-btn" data-lang="de" onclick="switchLanguage('de')">DE</button>
+    </div>
+
     <header>
         <picture class="logo">
             <img src="images/stratton_logo.png" alt="Stratton Oakmont, Inc." class="logo">
         </picture>
-        <h1>Stratton Oakmont Sales Training Manual</h1>
-        <p>A Comprehensive Guide to Professional Sales Techniques</p>
+        <h1 class="lang-en">Stratton Oakmont Sales Training Manual</h1>
+        <h1 class="lang-de">Stratton Oakmont Schulungshandbuch für Vertrieb</h1>
+        <p class="lang-en">A Comprehensive Guide to Professional Sales Techniques</p>
+        <p class="lang-de">Ein umfassender Leitfaden für professionelle Verkaufstechniken</p>
+        <p><a href="StrattonOakmont95_qf7EDgcEQg6c6CXJFq1U.pdf" download class="pdf-download lang-en">Download Original PDF</a>
+        <a href="StrattonOakmont95_qf7EDgcEQg6c6CXJFq1U.pdf" download class="pdf-download lang-de">Original PDF herunterladen</a></p>
     </header>
     
     <div class="toc">
-        <h2>Table of Contents</h2>
+        <h2 class="lang-en">Table of Contents</h2>
+        <h2 class="lang-de">Inhaltsverzeichnis</h2>
         <ul>
-            <li><a href="#introduction">Introduction</a></li>
-            <li><a href="section1_self_improvement.html">Self Improvement</a>
+            <li>
+                <a href="#introduction" class="lang-en">Introduction</a>
+                <a href="#introduction" class="lang-de">Einleitung</a>
+            </li>
+            <li>
+                <a href="section1_self_improvement.html" class="lang-en">Self Improvement</a>
+                <a href="section1_self_improvement.html" class="lang-de">Selbstverbesserung</a>
                 <ul>
-                    <li><a href="section1_self_improvement.html#napoleon-hills-principles">Napoleon Hill's Principles</a></li>
-                    <li><a href="section1_self_improvement.html#carl-mays-strategy">Carl May's Strategy for Winning</a></li>
+                    <li>
+                        <a href="section1_self_improvement.html#napoleon-hills-principles" class="lang-en">Napoleon Hill's Principles</a>
+                        <a href="section1_self_improvement.html#napoleon-hills-principles" class="lang-de">Napoleon Hills Prinzipien</a>
+                    </li>
+                    <li>
+                        <a href="section1_self_improvement.html#carl-mays-strategy" class="lang-en">Carl May's Strategy for Winning</a>
+                        <a href="section1_self_improvement.html#carl-mays-strategy" class="lang-de">Carl Mays Strategie zum Gewinnen</a>
+                    </li>
                 </ul>
             </li>
-            <li><a href="section2_selling_power.html">Selling Power</a>
+            <li>
+                <a href="section2_selling_power.html" class="lang-en">Selling Power</a>
+                <a href="section2_selling_power.html" class="lang-de">Verkaufskraft</a>
                 <ul>
-                    <li><a href="section2_selling_power.html#power-of-hunger">The Power of Hunger</a></li>
-                    <li><a href="section2_selling_power.html#growth-adversity">Growth Through Adversity</a></li>
+                    <li>
+                        <a href="section2_selling_power.html#power-of-hunger" class="lang-en">The Power of Hunger</a>
+                        <a href="section2_selling_power.html#power-of-hunger" class="lang-de">Die Kraft des Hungers</a>
+                    </li>
+                    <li>
+                        <a href="section2_selling_power.html#growth-adversity" class="lang-en">Growth Through Adversity</a>
+                        <a href="section2_selling_power.html#growth-adversity" class="lang-de">Wachstum durch Widrigkeiten</a>
+                    </li>
                 </ul>
             </li>
-            <li><a href="section3_sales_techniques.html">Sales Techniques</a>
+            <li>
+                <a href="section3_sales_techniques.html" class="lang-en">Sales Techniques</a>
+                <a href="section3_sales_techniques.html" class="lang-de">Verkaufstechniken</a>
                 <ul>
-                    <li><a href="section3_sales_techniques.html#qualifying-call-script">Qualifying Call Script</a></li>
-                    <li><a href="section3_sales_techniques.html#qualifying-questions">Qualifying Questions</a></li>
-                    <li><a href="section3_sales_techniques.html#rebuttals">Rebuttals</a></li>
+                    <li>
+                        <a href="section3_sales_techniques.html#qualifying-call-script" class="lang-en">Qualifying Call Script</a>
+                        <a href="section3_sales_techniques.html#qualifying-call-script" class="lang-de">Qualifizierendes Anrufskript</a>
+                    </li>
+                    <li>
+                        <a href="section3_sales_techniques.html#qualifying-questions" class="lang-en">Qualifying Questions</a>
+                        <a href="section3_sales_techniques.html#qualifying-questions" class="lang-de">Qualifizierende Fragen</a>
+                    </li>
+                    <li>
+                        <a href="section3_sales_techniques.html#rebuttals" class="lang-en">Rebuttals</a>
+                        <a href="section3_sales_techniques.html#rebuttals" class="lang-de">Einwandbehandlung</a>
+                    </li>
                 </ul>
             </li>
-            <li><a href="section4_best_practices.html">Best Practices</a>
+            <li>
+                <a href="section4_best_practices.html" class="lang-en">Best Practices</a>
+                <a href="section4_best_practices.html" class="lang-de">Bewährte Methoden</a>
                 <ul>
-                    <li><a href="section4_best_practices.html#dos-and-donts">Do's and Don'ts</a></li>
-                    <li><a href="section4_best_practices.html#what-is-a-qualified-investor">What is a Qualified Investor?</a></li>
+                    <li>
+                        <a href="section4_best_practices.html#dos-and-donts" class="lang-en">Do's and Don'ts</a>
+                        <a href="section4_best_practices.html#dos-and-donts" class="lang-de">Dos und Don'ts</a>
+                    </li>
+                    <li>
+                        <a href="section4_best_practices.html#what-is-a-qualified-investor" class="lang-en">What is a Qualified Investor?</a>
+                        <a href="section4_best_practices.html#what-is-a-qualified-investor" class="lang-de">Was ist ein qualifizierter Investor?</a>
+                    </li>
                 </ul>
             </li>
-            <li><a href="section5_special_situations.html">Special Situations</a>
+            <li>
+                <a href="section5_special_situations.html" class="lang-en">Special Situations</a>
+                <a href="section5_special_situations.html" class="lang-de">Besondere Situationen</a>
                 <ul>
-                    <li><a href="section5_special_situations.html#real-estate-investors">Real Estate Investors</a></li>
-                    <li><a href="section5_special_situations.html#corporate-finance-opportunities">Corporate Finance Opportunities</a></li>
+                    <li>
+                        <a href="section5_special_situations.html#real-estate-investors" class="lang-en">Real Estate Investors</a>
+                        <a href="section5_special_situations.html#real-estate-investors" class="lang-de">Immobilieninvestoren</a>
+                    </li>
+                    <li>
+                        <a href="section5_special_situations.html#corporate-finance-opportunities" class="lang-en">Corporate Finance Opportunities</a>
+                        <a href="section5_special_situations.html#corporate-finance-opportunities" class="lang-de">Möglichkeiten der Unternehmensfinanzierung</a>
+                    </li>
                 </ul>
             </li>
-            <li><a href="section6_special_handling.html">Special Handling Situations</a></li>
-            <li><a href="section7_motivation.html">Motivation and Mindset</a>
+            <li>
+                <a href="section6_special_handling.html" class="lang-en">Special Handling Situations</a>
+                <a href="section6_special_handling.html" class="lang-de">Besondere Handhabungssituationen</a>
+            </li>
+            <li>
+                <a href="section7_motivation.html" class="lang-en">Motivation and Mindset</a>
+                <a href="section7_motivation.html" class="lang-de">Motivation und Denkweise</a>
                 <ul>
-                    <li><a href="section7_motivation.html#winners-manifesto">Winners Manifesto</a></li>
-                    <li><a href="section7_motivation.html#anatomy-success">Anatomy of Success</a></li>
-                    <li><a href="section7_motivation.html#mind-power">Mind Power</a></li>
+                    <li>
+                        <a href="section7_motivation.html#winners-manifesto" class="lang-en">Winners Manifesto</a>
+                        <a href="section7_motivation.html#winners-manifesto" class="lang-de">Manifest der Gewinner</a>
+                    </li>
+                    <li>
+                        <a href="section7_motivation.html#anatomy-success" class="lang-en">Anatomy of Success</a>
+                        <a href="section7_motivation.html#anatomy-success" class="lang-de">Anatomie des Erfolgs</a>
+                    </li>
+                    <li>
+                        <a href="section7_motivation.html#mind-power" class="lang-en">Mind Power</a>
+                        <a href="section7_motivation.html#mind-power" class="lang-de">Mentale Stärke</a>
+                    </li>
                 </ul>
             </li>
-            <li><a href="section8_phone_skills.html">Phone Skills</a>
+            <li>
+                <a href="section8_phone_skills.html" class="lang-en">Phone Skills</a>
+                <a href="section8_phone_skills.html" class="lang-de">Telefonkompetenzen</a>
                 <ul>
-                    <li><a href="section8_phone_skills.html#voice-training">Voice Training</a></li>
-                    <li><a href="section8_phone_skills.html#phone-rules">Phone Rules</a></li>
-                    <li><a href="section8_phone_skills.html#phone-sales-tips">Phone Sales Tips</a></li>
+                    <li>
+                        <a href="section8_phone_skills.html#voice-training" class="lang-en">Voice Training</a>
+                        <a href="section8_phone_skills.html#voice-training" class="lang-de">Stimmtraining</a>
+                    </li>
+                    <li>
+                        <a href="section8_phone_skills.html#phone-rules" class="lang-en">Phone Rules</a>
+                        <a href="section8_phone_skills.html#phone-rules" class="lang-de">Telefonregeln</a>
+                    </li>
+                    <li>
+                        <a href="section8_phone_skills.html#phone-sales-tips" class="lang-en">Phone Sales Tips</a>
+                        <a href="section8_phone_skills.html#phone-sales-tips" class="lang-de">Tipps für Telefonverkauf</a>
+                    </li>
                 </ul>
             </li>
-            <li><a href="section9_resources.html">Resources</a>
+            <li>
+                <a href="section9_resources.html" class="lang-en">Resources</a>
+                <a href="section9_resources.html" class="lang-de">Ressourcen</a>
                 <ul>
-                    <li><a href="section9_resources.html#recommended-reading">Recommended Reading</a></li>
-                    <li><a href="section9_resources.html#objections-rebuttals">Objections and Rebuttals</a></li>
-                    <li><a href="section9_resources.html#financial-definitions">Financial Definitions</a></li>
-                    <li><a href="section9_resources.html#track-record">Track Record</a></li>
+                    <li>
+                        <a href="section9_resources.html#recommended-reading" class="lang-en">Recommended Reading</a>
+                        <a href="section9_resources.html#recommended-reading" class="lang-de">Empfohlene Lektüre</a>
+                    </li>
+                    <li>
+                        <a href="section9_resources.html#objections-rebuttals" class="lang-en">Objections and Rebuttals</a>
+                        <a href="section9_resources.html#objections-rebuttals" class="lang-de">Einwände und Entgegnungen</a>
+                    </li>
+                    <li>
+                        <a href="section9_resources.html#financial-definitions" class="lang-en">Financial Definitions</a>
+                        <a href="section9_resources.html#financial-definitions" class="lang-de">Finanzdefinitionen</a>
+                    </li>
+                    <li>
+                        <a href="section9_resources.html#track-record" class="lang-en">Track Record</a>
+                        <a href="section9_resources.html#track-record" class="lang-de">Erfolgsnachweis</a>
+                    </li>
                 </ul>
             </li>
         </ul>
@@ -78,20 +174,28 @@
 
     <div id="content">
         <section id="introduction" class="section">
-            <h2>Introduction</h2>
-            <div class="disclaimer">FOR TRAINING PURPOSES ONLY</div>
-            <p>This manual is designed for training purposes only. It contains proven techniques and strategies for professional sales success, drawing from various sources including Napoleon Hill's principles and Carl May's winning strategies.</p>
-            <p>Navigate through the different sections using the table of contents above to explore the comprehensive sales training materials.</p>
+            <h2 class="lang-en">Introduction</h2>
+            <h2 class="lang-de">Einleitung</h2>
+            <div class="disclaimer lang-en">FOR TRAINING PURPOSES ONLY</div>
+            <div class="disclaimer lang-de">NUR FÜR SCHULUNGSZWECKE</div>
+            <p class="lang-en">This manual is designed for training purposes only. It contains proven techniques and strategies for professional sales success, drawing from various sources including Napoleon Hill's principles and Carl May's winning strategies.</p>
+            <p class="lang-de">Dieses Handbuch ist ausschließlich für Schulungszwecke konzipiert. Es enthält bewährte Techniken und Strategien für den professionellen Verkaufserfolg, basierend auf verschiedenen Quellen einschließlich der Prinzipien von Napoleon Hill und der Erfolgsstrategien von Carl May.</p>
+            <p class="lang-en">Navigate through the different sections using the table of contents above to explore the comprehensive sales training materials.</p>
+            <p class="lang-de">Navigieren Sie durch die verschiedenen Abschnitte mithilfe des obigen Inhaltsverzeichnisses, um die umfassenden Vertriebsschulungsmaterialien zu erkunden.</p>
+            <p class="lang-en">For reference, you can also <a href="StrattonOakmont95_qf7EDgcEQg6c6CXJFq1U.pdf" download>download the original PDF version</a> of this manual.</p>
+            <p class="lang-de">Als Referenz können Sie auch <a href="StrattonOakmont95_qf7EDgcEQg6c6CXJFq1U.pdf" download>die ursprüngliche PDF-Version</a> dieses Handbuchs herunterladen.</p>
         </section>
         
         <div class="navigation">
             <span></span>
-            <a href="section1_self_improvement.html">Next: Self Improvement →</a>
+            <a href="section1_self_improvement.html" class="lang-en">Next: Self Improvement →</a>
+            <a href="section1_self_improvement.html" class="lang-de">Weiter: Selbstverbesserung →</a>
         </div>
     </div>
     
     <footer>
-        <div class="disclaimer">FOR TRAINING PURPOSES ONLY</div>
+        <div class="disclaimer lang-en">FOR TRAINING PURPOSES ONLY</div>
+        <div class="disclaimer lang-de">NUR FÜR SCHULUNGSZWECKE</div>
         <p>Stratton Oakmont, Inc. &copy; 1995</p>
     </footer>
 </body>

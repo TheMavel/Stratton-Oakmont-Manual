@@ -1,0 +1,7 @@
+@echo off
+echo Processing section files...
+
+powershell -ExecutionPolicy Bypass -Command "Add-Type -AssemblyName System.Web; $files = Get-ChildItem -Path . -Filter 'section*.html'; foreach ($file in $files) { Write-Host ('Processing ' + $file.Name); $content = Get-Content -Path $file.FullName -Raw; $originalContent = $content; foreach ($tag in @('h2', 'h3', 'h4')) { $pattern = '<' + $tag + '>([^<]+)</' + $tag + '>'; $content = [regex]::Replace($content, $pattern, '<' + $tag + ' class=\"lang-en\">$1</' + $tag + '>`r`n        <' + $tag + ' class=\"lang-de\">$1</' + $tag + '>') }; $pattern = '<p>([^<]+)</p>'; $content = [regex]::Replace($content, $pattern, '<p class=\"lang-en\">$1</p>`r`n        <p class=\"lang-de\">$1</p>'); $pattern = '<li>([^<]+)</li>'; $content = [regex]::Replace($content, $pattern, '<li class=\"lang-en\">$1</li>`r`n        <li class=\"lang-de\">$1</li>'); $pattern = '<strong>([^<]+)</strong>'; $content = [regex]::Replace($content, $pattern, '<strong class=\"lang-en\">$1</strong>`r`n        <strong class=\"lang-de\">$1</strong>'); $pattern = '<div class=\"disclaimer\">([^<]+)</div>'; $content = [regex]::Replace($content, $pattern, '<div class=\"disclaimer lang-en\">$1</div>`r`n        <div class=\"disclaimer lang-de\">NUR FÜR SCHULUNGSZWECKE</div>'); if ($content -ne $originalContent) { Set-Content -Path $file.FullName -Value $content; Write-Host ('Updated ' + $file.Name) } else { Write-Host ('No changes needed for ' + $file.Name) } }"
+
+echo All files processed.
+pause 

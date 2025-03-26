@@ -5,113 +5,174 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Motivation and Mindset - Stratton Oakmont Manual</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="language-switcher.js"></script>
 </head>
 <body>
+    <div class="language-selector">
+        <button class="language-btn active" data-lang="en" onclick="switchLanguage('en')">EN</button>
+        <button class="language-btn" data-lang="de" onclick="switchLanguage('de')">DE</button>
+    </div>
+
     <header>
         <picture class="logo">
             <img src="images/stratton_logo.png" alt="Stratton Oakmont, Inc." class="logo">
         </picture>
-        <h1>Stratton Oakmont Sales Training Manual</h1>
-        <p>Motivation and Mindset</p>
+        <h1 class="lang-en">Stratton Oakmont Sales Training Manual</h1>
+        <h1 class="lang-de">Stratton Oakmont Schulungshandbuch für Vertrieb</h1>
+        <p class="lang-en">Motivation and Mindset</p>
+        <p class="lang-de">Motivation und Denkweise</p>
     </header>
     
     <div class="navigation">
-        <a href="section6_special_handling.html">← Back to Special Handling Situations</a>
-        <a href="section8_phone_skills.html">Next: Phone Skills →</a>
+        <a href="section6_special_handling.html" class="lang-en">← Back to Special Handling Situations</a>
+        <a href="section6_special_handling.html" class="lang-de">← Zurück zu Besondere Handhabungssituationen</a>
+        <a href="section8_phone_skills.html" class="lang-en">Next: Phone Skills →</a>
+        <a href="section8_phone_skills.html" class="lang-de">Weiter: Telefonkompetenzen →</a>
     </div>
     
     <section id="anatomy-success" class="section">
-        <h2>The Anatomy of Success: Developing the Right Habits</h2>
+        <h2 class="lang-en">The Anatomy of Success: Developing the Right Habits</h2>
+        <h2 class="lang-de">Die Anatomie des Erfolgs: Die richtigen Gewohnheiten entwickeln</h2>
         
-        <p>HUMAN BEINGS ARE ALL CREATURES OF HABIT: BOTH GOOD AND BAD. ONCE WE GET IN A "GROOVE" ITS HARD TO CHANGE TRACKS. THIS CAN WORK EITHER FOR OR AGAINST US. THE FOLLOWING ARE COMMON HABITS AND TRAITS OF MOST SUCCESSFUL PEOPLE. GET IN THE "GROOVE" OF SUCCESS BY REPEATING AND FOLLOWING THESE AFFIRMATIONS:</p>
+        <p class="lang-en">Human beings are all creatures of habit: both good and bad. Once we get in a "groove" its hard to change tracks. This can work either for or against us. The following are common habits and traits of most successful people. Get in the "groove" of success by repeating and following these affirmations:</p>
+        <p class="lang-de">Menschen sind alle Gewohnheitstiere: sowohl gute als auch schlechte. Sobald wir in einer "Spur" sind, ist es schwer, die Gleise zu wechseln. Dies kann entweder für oder gegen uns arbeiten. Im Folgenden finden Sie häufige Gewohnheiten und Eigenschaften der meisten erfolgreichen Menschen. Kommen Sie in die "Spur" des Erfolgs, indem Sie diese Affirmationen wiederholen und befolgen:</p>
         
         <ol>
-            <li>I HAVE CLEARLY DEFINED GOALS AND IDENTIFY THE STEPS NECESSARY TO ACHIEVE THOSE GOALS.</li>
-            <li>I HAVE A WELL THOUGHT OUT "BATTLE PLAN" IN ACHIEVING MY GOALS WHICH I PURSUE WITH RELENTLESS PERSISTENCE, SELF-SACRIFICE AND DISCIPLINE.</li>
-            <li>I BELIEVE IN MYSELF AND MY DESTINY WITH SUCCESS.</li>
-            <li>I HAVE AN INTENSE DESIRE FOR SUCCESS WHICH CREATES AN ENERGY FORCE WHICH ENABLES ME TO PAY THE PRICE OF SELF SACRIFICE, HARD WORK, PERSISTENCE AND SELF DISCIPLINE IN ORDER TO ACHIEVE MY GOALS.</li>
-            <li>I PICTURE IN MY MINDS EYE, THE REWARDS OF SUCCESS WHICH SERVES AS "FUEL" TO KEEP MY ENGINE BURNING.</li>
-            <li>I KNOW I'M DESTINED FOR SUCCESS. EVERYTHING THAT HAPPENS IN MY LIFE IS FOR THE PURPOSE OF OBTAINING MY SUCCESS. I VIEW SETBACKS AS LEARNING EXPERIENCES WHICH INVARIABLY WILL OFFER SEEDS OF OPPORTUNITY. PROBLEMS ARE NEVER PROBLEMS BUT CHALLENGES THAT WITH CAREFUL THOUGHT AND ACTION ARE OVERCOME.</li>
-            <li>I KNOW THAT ANGER, JEALOUSLY VINDICTIVENESS AND NEGATIVE THOUGHTS ARE TO BE AVOIDED LIKE A PLAQUE. THEY ARE VIRUSES WHICH INFECT A PERSONS MIND, DESTROYING THE WILL TO SUCCEED. I KNOW NOTHING CAN GET ME MAD UNLESS I ALLOW IT.</li>
-            <li>I FEEL TERRIFIC.</li>
+            <li class="lang-en">I have clearly defined goals and identify the steps necessary to achieve those goals.</li>
+            <li class="lang-de">Ich habe klar definierte Ziele und identifiziere die notwendigen Schritte, um diese Ziele zu erreichen.</li>
+            <li class="lang-en">I have a well thought out "battle plan" in achieving my goals which I pursue with relentless persistence, self-sacrifice and discipline.</li>
+            <li class="lang-de">Ich habe einen durchdachten "Schlachtplan" zur Erreichung meiner Ziele, den ich mit unerbittlicher Beharrlichkeit, Selbstaufopferung und Disziplin verfolge.</li>
+            <li class="lang-en">I believe in myself and my destiny with success.</li>
+            <li class="lang-de">Ich glaube an mich selbst und meine Bestimmung zum Erfolg.</li>
+            <li class="lang-en">I have an intense desire for success which creates an energy force which enables me to pay the price of self sacrifice, hard work, persistence and self discipline in order to achieve my goals.</li>
+            <li class="lang-de">Ich habe ein intensives Verlangen nach Erfolg, das eine Energiekraft erzeugt, die es mir ermöglicht, den Preis der Selbstaufopferung, harter Arbeit, Beharrlichkeit und Selbstdisziplin zu zahlen, um meine Ziele zu erreichen.</li>
+            <li class="lang-en">I picture in my minds eye, the rewards of success which serves as "fuel" to keep my engine burning.</li>
+            <li class="lang-de">Ich stelle mir vor meinem geistigen Auge die Belohnungen des Erfolgs vor, die als "Treibstoff" dienen, um meinen Motor am Laufen zu halten.</li>
+            <li class="lang-en">I know I'm destined for success. Everything that happens in my life is for the purpose of obtaining my success. I view setbacks as learning experiences which invariably will offer seeds of opportunity. Problems are never problems but challenges that with careful thought and action are overcome.</li>
+            <li class="lang-de">Ich weiß, dass ich für den Erfolg bestimmt bin. Alles, was in meinem Leben geschieht, dient dem Zweck, meinen Erfolg zu erlangen. Ich betrachte Rückschläge als Lernerfahrungen, die unweigerlich Chancen bieten werden. Probleme sind niemals Probleme, sondern Herausforderungen, die mit sorgfältigem Nachdenken und Handeln überwunden werden.</li>
+            <li class="lang-en">I know that anger, jealously vindictiveness and negative thoughts are to be avoided like a plaque. They are viruses which infect a persons mind, destroying the will to succeed. I know nothing can get me mad unless I allow it.</li>
+            <li class="lang-de">Ich weiß, dass Wut, Eifersucht, Rachsucht und negative Gedanken wie eine Plage zu vermeiden sind. Sie sind Viren, die den Geist eines Menschen infizieren und den Willen zum Erfolg zerstören. Ich weiß, dass mich nichts wütend machen kann, es sei denn, ich lasse es zu.</li>
+            <li class="lang-en">I feel terrific.</li>
+            <li class="lang-de">Ich fühle mich großartig.</li>
         </ol>
         
-        <p>GET INTO THE HABIT OF SAYING AND DOING THE THINGS SUCCESSFUL PEOPLE DO AND YOU WILL CREATE AN ATTRACTION FORCE THAT WILL ENABLE YOU TO BE YOUR OWN MAGIC GENIE, WITH NOT THREE, BUT AN UNLIMITED NUMBER OF WISHES YOU CAN GRANT FOR YOURSELF. JUST REPEAT DAILY THESE POSITIVE AFFIRMATIONS AND PRACTICE WHAT YOU PREACH: YOUR WISHES WILL BE YOUR OWN COMMAND!</p>
+        <p class="lang-en">Get into the habit of saying and doing the things successful people do and you will create an attraction force that will enable you to be your own magic genie, with not three, but an unlimited number of wishes you can grant for yourself. Just repeat daily these positive affirmations and practice what you preach: your wishes will be your own command!</p>
+        <p class="lang-de">Gewöhnen Sie sich an, die Dinge zu sagen und zu tun, die erfolgreiche Menschen tun, und Sie werden eine Anziehungskraft schaffen, die es Ihnen ermöglicht, Ihr eigener Zaubergeist zu sein, mit nicht drei, sondern einer unbegrenzten Anzahl von Wünschen, die Sie sich selbst erfüllen können. Wiederholen Sie einfach täglich diese positiven Affirmationen und praktizieren Sie, was Sie predigen: Ihre Wünsche werden Ihr eigener Befehl sein!</p>
     </section>
     
     <section id="winners-manifesto" class="section">
-        <h2>Winners Manifesto</h2>
+        <h2 class="lang-en">Winners Manifesto</h2>
+        <h2 class="lang-de">Manifest der Gewinner</h2>
         
-        <p>WE ALL HAVE THE POWER TO "MOLD" OURSELVES BY THE THOUGHTS AND CONCERNS OF OUR MIND. REPEAT AND FOLLOW THE "WINNERS MANIFESTO" AND JOIN THE TEAM!</p>
+        <p class="lang-en">We all have the power to "mold" ourselves by the thoughts and concerns of our mind. Repeat and follow the "Winners Manifesto" and join the team!</p>
+        <p class="lang-de">Wir alle haben die Kraft, uns durch die Gedanken und Anliegen unseres Geistes zu "formen". Wiederholen und befolgen Sie das "Manifest der Gewinner" und schließen Sie sich dem Team an!</p>
         
         <ol>
-            <li>I AM A WINNER BECAUSE I THINK LIKE A WINNER, PREPARE LIKE A WINNER, AND PERFORM LIKE A WINNER.</li>
-            <li>I AM A WINNER BECAUSE I SET HIGH BUT ATTAINABLE GOALS, WORK TOWARD THOSE GOALS WITH DETERMINATION AND PERSISTENCE, AND NEVER STOP UNTIL I REACH THEM.</li>
-            <li>I AM A WINNER BECAUSE I AM STRONG ENOUGH TO SAY "NO!" TO THOSE THINGS THAT WOULD MAKE ME LESS THAN BY BEST, AND TO SAY "YES!" TO THE CHALLENGES AND OPPORTUNITIES THAT WILL MAKE ME GROW AND IMPROVE MY LIFE.</li>
-            <li>I AM A WINNER BECAUSE TOTAL COMMITMENT IS MY CONSTANT COMPANION, AND PERSONAL INTEGRITY IS MY LIFETIME MENTOR.</li>
-            <li>I AM A WINNER BECAUSE I AM LEARNING TO AVOID THE TEMPTING SHORTCUTS THAT CAN LEAD TO DISAPPOINTMENT, AND THE UNHEALTHY HABITS THAT COULD RESULT IN DEFEAT.</li>
-            <li>I AM A WINNER BECAUSE I HAVE A WELL-EARNED CONFIDENCE IN MYSELF.</li>
-            <li>I AM A WINNER BECAUSE I HAVE LEARNED TO ACCEPT CRITICISM, NOT AS A THREAT, BUT AS AN OPPORTUNITY TO EXAMINE MY ATTITUDES AND TO IMPROVE MY SKILLS.</li>
-            <li>I AM A WINNER BECAUSE I PERSEVERE IN THE MIDST OF OBSTACLES AND FIGHT ON IN THE FACE OF DEFEAT.</li>
-            <li>I AM A WINNER BECAUSE OF MY ENTHUSIASM FOR LIFE, MY ENJOYMENT OF THE PRESENT, AND MY TRUST IN THE FUTURE.</li>
-            <li>I AM A WINNER BECAUSE I AM A STRATTON OAKMONT EMPLOYEE.</li>
+            <li class="lang-en">I am a winner because I think like a winner, prepare like a winner, and perform like a winner.</li>
+            <li class="lang-de">Ich bin ein Gewinner, weil ich wie ein Gewinner denke, mich wie ein Gewinner vorbereite und wie ein Gewinner handle.</li>
+            <li class="lang-en">I am a winner because I set high but attainable goals, work toward those goals with determination and persistence, and never stop until I reach them.</li>
+            <li class="lang-de">Ich bin ein Gewinner, weil ich hohe, aber erreichbare Ziele setze, mit Entschlossenheit und Beharrlichkeit auf diese Ziele hinarbeite und niemals aufhöre, bis ich sie erreicht habe.</li>
+            <li class="lang-en">I am a winner because I am strong enough to say "No!" to those things that would make me less than by best, and to say "Yes!" to the challenges and opportunities that will make me grow and improve my life.</li>
+            <li class="lang-de">Ich bin ein Gewinner, weil ich stark genug bin, "Nein!" zu den Dingen zu sagen, die mich weniger als mein Bestes sein lassen würden, und "Ja!" zu den Herausforderungen und Möglichkeiten zu sagen, die mich wachsen lassen und mein Leben verbessern werden.</li>
+            <li class="lang-en">I am a winner because total commitment is my constant companion, and personal integrity is my lifetime mentor.</li>
+            <li class="lang-de">Ich bin ein Gewinner, weil totales Engagement mein ständiger Begleiter ist und persönliche Integrität mein lebenslanger Mentor ist.</li>
+            <li class="lang-en">I am a winner because I am learning to avoid the tempting shortcuts that can lead to disappointment, and the unhealthy habits that could result in defeat.</li>
+            <li class="lang-de">Ich bin ein Gewinner, weil ich lerne, die verlockenden Abkürzungen zu vermeiden, die zu Enttäuschungen führen können, und die ungesunden Gewohnheiten, die zu einer Niederlage führen könnten.</li>
+            <li class="lang-en">I am a winner because I have a well-earned confidence in myself.</li>
+            <li class="lang-de">Ich bin ein Gewinner, weil ich ein wohlverdientes Selbstvertrauen habe.</li>
+            <li class="lang-en">I am a winner because I have learned to accept criticism, not as a threat, but as an opportunity to examine my attitudes and to improve my skills.</li>
+            <li class="lang-de">Ich bin ein Gewinner, weil ich gelernt habe, Kritik nicht als Bedrohung anzunehmen, sondern als Gelegenheit, meine Einstellungen zu überprüfen und meine Fähigkeiten zu verbessern.</li>
+            <li class="lang-en">I am a winner because I persevere in the midst of obstacles and fight on in the face of defeat.</li>
+            <li class="lang-de">Ich bin ein Gewinner, weil ich inmitten von Hindernissen durchhalte und im Angesicht der Niederlage weiterkämpfe.</li>
+            <li class="lang-en">I am a winner because of my enthusiasm for life, my enjoyment of the present, and my trust in the future.</li>
+            <li class="lang-de">Ich bin ein Gewinner wegen meiner Begeisterung für das Leben, meiner Freude an der Gegenwart und meinem Vertrauen in die Zukunft.</li>
+            <li class="lang-en">I am a winner because I am a Stratton Oakmont employee.</li>
+            <li class="lang-de">Ich bin ein Gewinner, weil ich ein Stratton Oakmont Mitarbeiter bin.</li>
         </ol>
     </section>
     
     <section id="mind-power" class="section">
-        <h2>Mind Power</h2>
+        <h2 class="lang-en">Mind Power</h2>
+        <h2 class="lang-de">Mentale Stärke</h2>
         
-        <p class="author">BY: IRA BOSHNACK<br>MANAGING DIRECTOR</p>
+        <p class="author lang-en">By: Ira Boshnack<br>Managing Director</p>
+        <p class="author lang-de">Von: Ira Boshnack<br>Geschäftsführender Direktor</p>
         
-        <p>"ANYTHING WITHIN REASON THAT THE MIND OF MAN CAN CONCEIVE AND BELIEVE CAN BE ACHIEVED."</p>
+        <p class="lang-en">"Anything within reason that the mind of man can conceive and believe can be achieved."</p>
+        <p class="lang-de">"Alles, was der menschliche Geist vernünftigerweise konzipieren und glauben kann, kann auch erreicht werden."</p>
         
-        <p>MENTAL OBSESSIONS HAVE PHYSICAL MANIFESTATIONS: YOUR BODY REACTS TO THE THOUGHTS AND CONCERNS OF THE MIND. YOUR THOUGHTS CAN MAKE YOU SICK OR RELEASE ENDORPHINS (OVER 50 TIMES MORE POTENT THAN MORPHINE) WHICH CAUSES ELATION AND GOOD HEALTH. AN EMOTIONALLY UPSET INDIVIDUAL IS MORE PRONE TO ACCIDENTS AND ILL HEALTH THAN AN EMOTIONALLY STABLE INDIVIDUAL.</p>
+        <p class="lang-en">Mental obsessions have physical manifestations: your body reacts to the thoughts and concerns of the mind. Your thoughts can make you sick or release endorphins (over 50 times more potent than morphine) which causes elation and good health. An emotionally upset individual is more prone to accidents and ill health than an emotionally stable individual.</p>
+        <p class="lang-de">Mentale Obsessionen haben körperliche Manifestationen: Ihr Körper reagiert auf die Gedanken und Sorgen des Geistes. Ihre Gedanken können Sie krank machen oder Endorphine freisetzen (über 50-mal potenter als Morphium), die Hochgefühl und gute Gesundheit verursachen. Ein emotional aufgebrachtes Individuum ist anfälliger für Unfälle und schlechte Gesundheit als ein emotional stabiles Individuum.</p>
         
-        <p>HOW CAN WE MAKE SURE WE WON'T BECOME VICTIMS OF OUR ANXIETIES? SINCE THE MIND TELLS THE BODY HOW TO ACT, THINK THE HIGHEST, MOST UPLIFTING THOUGHTS YOU CAN IMAGINE. HERE ARE SOME TIPS TO HELP YOU USE THE POWER OF YOUR MIND:</p>
+        <p class="lang-en">How can we make sure we won't become victims of our anxieties? Since the mind tells the body how to act, think the highest, most uplifting thoughts you can imagine. Here are some tips to help you use the power of your mind:</p>
+        <p class="lang-de">Wie können wir sicherstellen, dass wir nicht zu Opfern unserer Ängste werden? Da der Geist dem Körper sagt, wie er handeln soll, denken Sie die höchsten, erhebendsten Gedanken, die Sie sich vorstellen können. Hier sind einige Tipps, die Ihnen helfen, die Kraft Ihres Geistes zu nutzen:</p>
         <ul>
-            <li>VISUALIZE POSITIVE SITUATIONS.</li>
-            <li>THINK AND SPEAK WELL OF YOUR HEALTH.</li>
-            <li>USE YOUR POWER OF VISUALIZATION.</li>
-            <li>USE POSITIVE SELF-TALK ON A DAILY BASIS.</li>
-            <li>DON'T DWELL ON AILMENTS OR THEY WILL MAKE A HABIT OF RECURRING.</li>
-            <li>DO SOME TYPE OF EXERCISE, ANYTHING WHICH PROMOTES CARDIOVASCULAR ACTIVITY.</li>
-            <li>REGULAR EXERCISE CAN ADD TEN YEARS OF HEALTHY LIVING TO A PERSON'S LIFE.</li>
-            <li>SET GOALS AND USE ENTHUSIASM TO REACH THEM.</li>
+            <li class="lang-en">Visualize positive situations.</li>
+            <li class="lang-de">Visualisieren Sie positive Situationen.</li>
+            <li class="lang-en">Think and speak well of your health.</li>
+            <li class="lang-de">Denken und sprechen Sie gut über Ihre Gesundheit.</li>
+            <li class="lang-en">Use your power of visualization.</li>
+            <li class="lang-de">Nutzen Sie Ihre Visualisierungskraft.</li>
+            <li class="lang-en">Use positive self-talk on a daily basis.</li>
+            <li class="lang-de">Verwenden Sie täglich positive Selbstgespräche.</li>
+            <li class="lang-en">Don't dwell on ailments or they will make a habit of recurring.</li>
+            <li class="lang-de">Verweilen Sie nicht bei Beschwerden, sonst werden sie zur Gewohnheit und kehren wieder.</li>
+            <li class="lang-en">Do some type of exercise, anything which promotes cardiovascular activity.</li>
+            <li class="lang-de">Machen Sie irgendeine Art von Übung, alles, was die Herz-Kreislauf-Aktivität fördert.</li>
+            <li class="lang-en">Regular exercise can add ten years of healthy living to a person's life.</li>
+            <li class="lang-de">Regelmäßige Bewegung kann dem Leben eines Menschen zehn Jahre gesundes Leben hinzufügen.</li>
+            <li class="lang-en">Set goals and use enthusiasm to reach them.</li>
+            <li class="lang-de">Setzen Sie sich Ziele und nutzen Sie Begeisterung, um sie zu erreichen.</li>
         </ul>
         
-        <p>PERSISTENCE AND DETERMINATION TOGETHER ARE OMNIPOTENT. YOU NEVER FAIL UNLESS YOU QUIT. SUCCESSFUL INDIVIDUALS HAVE CLEARLY DEFINED GAME PLANS WHICH THEY REVIEW CONSTANTLY. THEY KNOW WHERE THEY ARE GOING EVERY DAY, EVERY MONTH AND EVERY YEAR. THINGS JUST DON'T HAPPEN IN THEIR LIVES: THEY MAKE THEM HAPPEN. DON'T LET ANYTHING STAND IN YOUR WAY. YOUR LEVEL OF PERSISTENCE IN THE FACE OF ADVERSITY AND DISAPPOINTMENT WILL BE A MEASURE OF BELIEF IN YOURSELF. ASSOCIATE WITH PEOPLE WHO SHARE YOUR GOALS AND WORK HABITS. YOU MUST FOLLOW THE LEADERS, WHO ARE THE BEST AT WHAT THEY DO.</p>
+        <p class="lang-en">Persistence and determination together are omnipotent. You never fail unless you quit. Successful individuals have clearly defined game plans which they review constantly. They know where they are going every day, every month and every year. Things just don't happen in their lives: they make them happen. Don't let anything stand in your way. Your level of persistence in the face of adversity and disappointment will be a measure of belief in yourself. Associate with people who share your goals and work habits. You must follow the leaders, who are the best at what they do.</p>
+        <p class="lang-de">Beharrlichkeit und Entschlossenheit zusammen sind allmächtig. Sie scheitern nie, es sei denn, Sie geben auf. Erfolgreiche Menschen haben klar definierte Spielpläne, die sie ständig überprüfen. Sie wissen, wohin sie jeden Tag, jeden Monat und jedes Jahr gehen. Die Dinge passieren nicht einfach in ihrem Leben: sie lassen sie geschehen. Lassen Sie nichts in Ihrem Weg stehen. Ihr Maß an Beharrlichkeit angesichts von Widrigkeiten und Enttäuschungen wird ein Maß des Glaubens an sich selbst sein. Verbinden Sie sich mit Menschen, die Ihre Ziele und Arbeitsgewohnheiten teilen. Sie müssen den Führern folgen, die die Besten in dem sind, was sie tun.</p>
         
-        <p>PROBABLY THE HARDEST THING IS GETTING STARTED IN THE RIGHT DIRECTION. STARTING A SALES CAREER IS LIKE FLYING A PLANE. TO GET OFF THE GROUND YOU MUST HAVE FULL THROTTLE. BUT, YOU CAN'T KEEP IT AT THAT SPEED OR THE ENGINE WILL BURN OUT. WHEN THE PLANE REACHES CRUISING ALTITUDE, YOU PULL BACK A LITTLE BIT ON THE THROTTLE. THIS IS THE WAY OUR SALES CAREERS ARE. TO A CERTAIN POINT, YOU HAVE TO PUT ON FULL THROTTLE TO TAKE OFF AND GET TO THE HEIGHTS WHERE YOU CAN THEN CRUISE.</p>
+        <p class="lang-en">Probably the hardest thing is getting started in the right direction. Starting a sales career is like flying a plane. To get off the ground you must have full throttle. But, you can't keep it at that speed or the engine will burn out. When the plane reaches cruising altitude, you pull back a little bit on the throttle. This is the way our sales careers are. To a certain point, you have to put on full throttle to take off and get to the heights where you can then cruise.</p>
+        <p class="lang-de">Wahrscheinlich ist das Schwierigste, in die richtige Richtung zu starten. Eine Verkaufskarriere zu beginnen ist wie ein Flugzeug zu fliegen. Um vom Boden abzuheben, müssen Sie Vollgas geben. Aber Sie können die Geschwindigkeit nicht beibehalten, sonst brennt der Motor aus. Wenn das Flugzeug die Reisehöhe erreicht, nehmen Sie ein wenig Gas zurück. So sind unsere Verkaufskarrieren. Bis zu einem gewissen Punkt müssen Sie Vollgas geben, um abzuheben und die Höhen zu erreichen, wo Sie dann gleiten können.</p>
         
-        <p>ONCE YOU HAVE ACHIEVED A CERTAIN LEVEL OF SUCCESS, YOU CAN REWARD YOURSELF WITH MORE TIME FOR YOUR ENJOYMENT.</p>
+        <p class="lang-en">Once you have achieved a certain level of success, you can reward yourself with more time for your enjoyment.</p>
+        <p class="lang-de">Sobald Sie ein gewisses Maß an Erfolg erreicht haben, können Sie sich mit mehr Zeit für Ihr Vergnügen belohnen.</p>
     </section>
     
     <section id="sales-professional" class="section">
-        <h2>An Insight Into Becoming a Better Sales Professional</h2>
+        <h2 class="lang-en">An Insight Into Becoming a Better Sales Professional</h2>
+        <h2 class="lang-de">Ein Einblick, wie man ein besserer Vertriebsprofi wird</h2>
         
-        <p class="author">BY: IRA BOSHNACK<br>MANAGING DIRECTOR</p>
+        <p class="author lang-en">By: Ira Boshnack<br>Managing Director</p>
+        <p class="author lang-de">Von: Ira Boshnack<br>Geschäftsführender Direktor</p>
         
-        <p>"WE BECOME WHAT WE THINK ABOUT MOST"</p>
+        <p class="lang-en">"We become what we think about most"</p>
+        <p class="lang-de">"Wir werden zu dem, worüber wir am meisten nachdenken"</p>
         
-        <p>SALES PROFESSIONALS HAVE MADE AMERICA GREAT. THEY PROMOTE OUR CAPITALISTIC DEMOCRATIC SOCIETY. WITHOUT SALESPEOPLE, IBM, XEROX, MERRILL LYNCH, OR ANY MAJOR COMPANY COULD NEVER HAVE BECOME A FINANCIAL SUCCESS. THE PROFESSIONAL SALESPERSON IS THE HIGHEST PAID SEGMENT OF OUR SOCIETY.</p>
+        <p class="lang-en">Sales professionals have made America great. They promote our capitalistic democratic society. Without salespeople, IBM, Xerox, Merrill Lynch, or any major company could never have become a financial success. The professional salesperson is the highest paid segment of our society.</p>
+        <p class="lang-de">Vertriebsprofis haben Amerika groß gemacht. Sie fördern unsere kapitalistische demokratische Gesellschaft. Ohne Verkäufer hätten IBM, Xerox, Merrill Lynch oder jedes andere große Unternehmen niemals finanziellen Erfolg haben können. Der professionelle Verkäufer ist das bestbezahlte Segment unserer Gesellschaft.</p>
         
-        <p>I HAVE NEVER MET A BORN SALES PROFESSIONAL, NO MATTER HOW GOOD HE OR SHE MAY BE. EVERY SUPER SALESPERSON IS A TRAINED PROFESSIONAL. THEY ARE WILLING TO PAY THE PRICE OF SUCCESS. THEY HAVE MADE THE COMMITMENT TO PRACTICE, DRILL, AND REHEARSE THE KEY INGREDIENTS OF SUCCESS IN THEIR FIELD. NO ONE HAS EVERG BEEN DENIED THE RIGHT TO WEALTH AND SUCCESS BY ANYONE BUT THEMSELVES. WHAT YOU FACE IS AN ENORMOUS NEED FOR A THING CALLED EFFORT. PROFESSIONAL EFFORT, STUDY AND APPLICATION. YOU ARE EARNING TODAY EXACTLY WHAT YOUR SKILL, EFFORT AND WILL POWER HAVE ALLOWED YOU TO EARN.</p>
+        <p class="lang-en">I have never met a born sales professional, no matter how good he or she may be. Every super salesperson is a trained professional. They are willing to pay the price of success. They have made the commitment to practice, drill, and rehearse the key ingredients of success in their field. No one has ever been denied the right to wealth and success by anyone but themselves. What you face is an enormous need for a thing called effort. Professional effort, study and application. You are earning today exactly what your skill, effort and will power have allowed you to earn.</p>
+        <p class="lang-de">Ich habe nie einen geborenen Vertriebsprofi getroffen, egal wie gut er oder sie sein mag. Jeder Superverkäufer ist ein ausgebildeter Profi. Sie sind bereit, den Preis des Erfolgs zu zahlen. Sie haben sich verpflichtet, die Schlüsselelemente des Erfolgs in ihrem Bereich zu üben, zu trainieren und zu proben. Niemandem wurde das Recht auf Reichtum und Erfolg von jemand anderem als sich selbst verwehrt. Was Sie vor sich haben, ist ein enormer Bedarf an einer Sache namens Anstrengung. Professionelle Anstrengung, Studium und Anwendung. Sie verdienen heute genau das, was Ihre Fähigkeiten, Anstrengungen und Willenskraft Ihnen zu verdienen erlaubt haben.</p>
         
-        <p>EVERYONE DEEP DOWN INSIDE HAS A VAST RESERVOIR OF TALENT AND ENERGY THAT CAN BE TAPPED AND DIRECTED TOWARDS ACHIEVING SUPER SUCCESS. ALL YOU HAVE TO DO IS HAVE A BURNING DESIRE AND WILLINGNESS TO PAY THE PRICE OF SELF-DISCIPLINE, HARD WORK AND PERSISTENCE IN ACHIEVING YOUR SALES GOALS.</p>
+        <p class="lang-en">Everyone deep down inside has a vast reservoir of talent and energy that can be tapped and directed towards achieving super success. All you have to do is have a burning desire and willingness to pay the price of self-discipline, hard work and persistence in achieving your sales goals.</p>
+        <p class="lang-de">Jeder hat tief in sich drin ein riesiges Reservoir an Talent und Energie, das angezapft und auf das Erreichen von Supererfolg gerichtet werden kann. Alles, was Sie tun müssen, ist, ein brennendes Verlangen und die Bereitschaft zu haben, den Preis der Selbstdisziplin, harter Arbeit und Beharrlichkeit beim Erreichen Ihrer Verkaufsziele zu zahlen.</p>
         
-        <p>ONE OF THE SECRETS TO SUCCESSFUL SALES IS POSITIVE THINKING AND THE ABILITY TO UTILIZE MENTAL VISUAL IMAGERY. OUR BEHAVIOR IS GOVERNED BY IMAGES OF ACHIEVEMENT AND WITHOUT THESE IMAGES WE CANNOT MOBILIZE AND MOTIVATE OURSELVES TO ACHIEVE OUR GOALS. THE POWER OF MENTAL VISUALIZATION CAN HARNESS A FLOOD OF SENSORY VISUAL IMAGES TO REINFORCE AN INTELLECTUALLY FORMULATED PLAN THAT WILL RELEASE AN UNLIMITED SOURCE OF ENTHUSIASM TO APPLY TOWARDS INCREASED SALES. WHEN YOUR IMAGINATION IS HARNESSED AND FOCUSED ON THE BENEFITS AND REWARDS OF SUCCESS, THE FIRES OF MOTIVATION ARE LIT ALONG WITH THE SELF-DISCIPLINE AND SACRIFICE TO ACHIEVE YOUR GOALS. THE POWER OF MENTAL VISUALIZATION SHOULD NOT BE TAKEN FOR GRANTED.</p>
+        <p class="lang-en">One of the secrets to successful sales is positive thinking and the ability to utilize mental visual imagery. Our behavior is governed by images of achievement and without these images we cannot mobilize and motivate ourselves to achieve our goals. The power of mental visualization can harness a flood of sensory visual images to reinforce an intellectually formulated plan that will release an unlimited source of enthusiasm to apply towards increased sales. When your imagination is harnessed and focused on the benefits and rewards of success, the fires of motivation are lit along with the self-discipline and sacrifice to achieve your goals. The power of mental visualization should not be taken for granted.</p>
+        <p class="lang-de">Eines der Geheimnisse für erfolgreichen Verkauf ist positives Denken und die Fähigkeit, mentale visuelle Bilder zu nutzen. Unser Verhalten wird von Bildern des Erfolgs gesteuert, und ohne diese Bilder können wir uns nicht mobilisieren und motivieren, unsere Ziele zu erreichen. Die Kraft der mentalen Visualisierung kann eine Flut von sensorischen visuellen Bildern nutzen, um einen intellektuell formulierten Plan zu verstärken, der eine unbegrenzte Quelle an Begeisterung freisetzen wird, um sie auf gesteigerte Verkäufe anzuwenden. Wenn Ihre Vorstellungskraft gebündelt und auf die Vorteile und Belohnungen des Erfolgs ausgerichtet ist, werden die Feuer der Motivation zusammen mit der Selbstdisziplin und dem Opfer entzündet, um Ihre Ziele zu erreichen. Die Kraft der mentalen Visualisierung sollte nicht als selbstverständlich angesehen werden.</p>
         
-        <p>THE POWER OF THE MIND AND VISUAL IMAGERY CAN BE FURTHER UNDERSTOOD BY SIMPLY THINKING HOW WHEN WE ARE HUNGRY AND THINK ABOUT OUR FAVORITE FOOD, OUR MOUTHS BEGIN TO WATER OR WHEN WE HEAR FANTASTIC NEWS A RUSH OF GOOD FEELINGS ENVELOPES US; OR WHEN WE HEAR HORRIBLE NEWS, WE FEEL A GUT RIPPING SENSATION IN THE PIT OF OUR STOMACHS. REMEMBER THAT EVERY GREAT WORK AND DISCOVERY FIRST EXISTED IN SOMEONE'S MIND AS A VIVID IMAGE. EVERY ACT AND DEED THAT HAS ENABLED MANKIND TO EXCEL AND ACHIEVE SUCCESS WAS FIRST BORN IN SOMEONE' MIND. MAKE NO DOUBT ABOUT IT, INTENSE POSITIVE THINKING AND VISUAL IMAGERY CAN CHANGE ALL OF YOUR LIVES. THE ABILITY TO TRANSLATE ONE'S HOPE AND ASPIRATIONS INTO POSITIVE SENSORY-RICH IMAGES IS THE CUTTING EDGE WHICH SEPARATES THE HIGH ACHIEVER FROM THE RUN OF THE MILL EVERYDAY PERSON. THE SUSTAINED INTENSITY OF YOUR POSITIVE THOUGHTS AND DETAILED MENTAL VISUALIZATION WILL BE THE DETERMINING FACTOR IN THE DEGREE OF YOUR SUCCESS IN SALES AS WELL AS IN LIFE!</p>
+        <p class="lang-en">The power of the mind and visual imagery can be further understood by simply thinking how when we are hungry and think about our favorite food, our mouths begin to water or when we hear fantastic news a rush of good feelings envelopes us; or when we hear horrible news, we feel a gut ripping sensation in the pit of our stomachs. Remember that every great work and discovery first existed in someone's mind as a vivid image. Every act and deed that has enabled mankind to excel and achieve success was first born in someone's mind. Make no doubt about it, intense positive thinking and visual imagery can change all of your lives. The ability to translate one's hope and aspirations into positive sensory-rich images is the cutting edge which separates the high achiever from the run of the mill everyday person. The sustained intensity of your positive thoughts and detailed mental visualization will be the determining factor in the degree of your success in sales as well as in life!</p>
+        <p class="lang-de">Die Kraft des Geistes und der visuellen Vorstellungskraft kann weiter verstanden werden, indem man einfach daran denkt, wie, wenn wir hungrig sind und an unser Lieblingsessen denken, unser Mund zu wässern beginnt, oder wenn wir fantastische Nachrichten hören, uns ein Schwall guter Gefühle umhüllt; oder wenn wir schreckliche Nachrichten hören, wir ein reißendes Gefühl in der Magengrube spüren. Denken Sie daran, dass jedes große Werk und jede Entdeckung zuerst im Geist eines Menschen als lebendiges Bild existierte. Jede Handlung und Tat, die es der Menschheit ermöglicht hat, zu glänzen und Erfolg zu erzielen, wurde zuerst im Geist eines Menschen geboren. Machen Sie sich keine Illusionen, intensives positives Denken und visuelle Bilder können all Ihre Leben verändern. Die Fähigkeit, die eigenen Hoffnungen und Bestrebungen in positive, sensorisch reiche Bilder zu übersetzen, ist die Schneidkante, die den Hochleister vom Durchschnittsmenschen trennt. Die anhaltende Intensität Ihrer positiven Gedanken und detaillierten mentalen Visualisierung wird der entscheidende Faktor für den Grad Ihres Erfolgs im Verkauf sowie im Leben sein!</p>
     </section>
     
     <div class="navigation">
-        <a href="section6_special_handling.html">← Back to Special Handling Situations</a>
-        <a href="section8_phone_skills.html">Next: Phone Skills →</a>
+        <a href="section6_special_handling.html" class="lang-en">← Back to Special Handling Situations</a>
+        <a href="section6_special_handling.html" class="lang-de">← Zurück zu Besondere Handhabungssituationen</a>
+        <a href="section8_phone_skills.html" class="lang-en">Next: Phone Skills →</a>
+        <a href="section8_phone_skills.html" class="lang-de">Weiter: Telefonkompetenzen →</a>
     </div>
     
     <footer>
-        <div class="disclaimer">FOR TRAINING PURPOSES ONLY</div>
-        <p>Stratton Oakmont, Inc. &copy; 1995</p>
+        <div class="disclaimer lang-en">FOR TRAINING PURPOSES ONLY</div>
+        <div class="disclaimer lang-de">NUR FÜR SCHULUNGSZWECKE</div>
+        <p class="lang-en">Stratton Oakmont, Inc. &copy; 1995</p>`r`n        <p class="lang-de">Stratton Oakmont, Inc. &copy; 1995</p>
     </footer>
 </body>
 </html> 
+
