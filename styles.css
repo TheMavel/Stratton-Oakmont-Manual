@@ -265,4 +265,123 @@ html[lang="de"] li.lang-de {
 
 .pdf-download:hover {
     background-color: var(--primary-color);
+}
+
+/* Table container */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+/* Performance tables */
+.performance-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+}
+
+.performance-table th,
+.performance-table td {
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    text-align: center;
+}
+
+.performance-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.performance-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.performance-table tr:hover {
+    background-color: #eaf7ff;
+}
+
+/* Fix for language display in tables */
+html[lang="en"] td.lang-en {
+    display: table-cell;
+}
+
+html[lang="de"] td.lang-de {
+    display: table-cell;
+}
+
+html[lang="en"] th.lang-en {
+    display: table-cell;
+}
+
+html[lang="de"] th.lang-de {
+    display: table-cell;
+}
+
+/* Objections table */
+.objections-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.objections-table th,
+.objections-table td {
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.objections-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.objections-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.objections-table tr:hover {
+    background-color: #eaf7ff;
+}
+
+/* Language switching for tables */
+html[lang="en"] .performance-table th.lang-de,
+html[lang="de"] .performance-table th.lang-en,
+html[lang="en"] .objections-table th.lang-de,
+html[lang="de"] .objections-table th.lang-en {
+    display: none;
+}
+
+html[lang="en"] .performance-table th.lang-en,
+html[lang="de"] .performance-table th.lang-de,
+html[lang="en"] .objections-table th.lang-en,
+html[lang="de"] .objections-table th.lang-de {
+    display: table-cell;
+}
+
+/* Language switching for financial definitions */
+html[lang="en"] #financial-definitions li p strong.lang-de,
+html[lang="en"] #financial-definitions li p.lang-de,
+html[lang="de"] #financial-definitions li p strong.lang-en,
+html[lang="de"] #financial-definitions li p.lang-en {
+    display: none;
+}
+
+/* Definition styles */
+.definition {
+    margin-bottom: 10px;
+}
+
+/* Update language switching for financial definitions */
+html[lang="en"] .definition p.lang-de,
+html[lang="de"] .definition p.lang-en {
+    display: none;
+}
+
+html[lang="en"] .definition p.lang-en,
+html[lang="de"] .definition p.lang-de {
+    display: block;
 } 
